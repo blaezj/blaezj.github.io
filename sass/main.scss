@@ -33,9 +33,39 @@
     grid-row: 1; // make this image be on the same row
 }
 
-// small section for
+// small section for top
 .small-section {
     padding: 1rem;
-    margin: auto 30rem;
-    max-width: auto;
+    margin: auto auto;
+    width: 1000rem;
+    align-items: center;
   }
+
+.front-section {
+  @extend .section;
+  height: fit-content;
+}
+
+// button thats small
+.buttonSquare {
+  @extend .button;
+  //border-radius: 8px;
+  padding: 8px; // setting this to 0 centers any text
+  //font-size: 1.5rem; 
+  width: 50px; 
+  height: 25px; 
+}
+
+@font-face {
+  font-family: 'Futura';
+  src: url('../fonts/futura/futur.ttf');
+}
+
+.futuraTitle {
+  @extend .title;
+  font-family: 'Futura', Arial, Helvetica, sans-serif !important;
+}
+
+highlight {
+  background-color: #18141c;
+}

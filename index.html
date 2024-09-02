@@ -3,45 +3,48 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Blaez Jibben!</title>
+    <title>hullo</title>
     <link rel="stylesheet" href="css/main.css"> 
   </head>
   <body>
 
-  <!-- drop down bar -->
+  <!-- drop down bar and top section-->
   <section class="section has-background-warning small-section"> 
-
-
-    <div class="dropdown">
+    <div class="dropdown is-hoverable">
       <div class="dropdown-trigger">
-        <button class="button" aria-haspopup="true" aria-controls="dropdown-menu2">
-          <span>secret button</span>
+        <button class="buttonSquare" aria-haspopup="true" aria-controls="dropdown-menu4">
+         <span>hello</span>
           <span class="icon is-small">
             <i class="fas fa-angle-down" aria-hidden="true"></i>
           </span>
         </button>
       </div>
-      <div class="dropdown-menu" id="dropdown-menu3" role="menu">
+      <div class="dropdown-menu" id="dropdown-menu4" role="menu">
         <div class="dropdown-content">
-          <a href="#" class="dropdown-item"> Overview </a>
-          <a href="#" class="dropdown-item"> Modifiers </a>
-          <a href="#" class="dropdown-item"> Grid </a>
-          <a href="#" class="dropdown-item"> Form </a>
-          <a href="#" class="dropdown-item"> Elements </a>
-          <a href="#" class="dropdown-item"> Components </a>
-          <a href="#" class="dropdown-item"> Layout </a>
-          <hr class="dropdown-divider" />
-          <a href="#" class="dropdown-item"> More </a>
+          <div class="dropdown-item">
+            <p>
+              <strong>about me</strong>
+            </p>
+          </div>
+          <div class="dropdown-item">
+            <p>
+              <strong>my work</strong>
+            </p>
+          </div>
         </div>
       </div>
     </div>
+
   </section>
 
-  <section class="section is-medium" style="transform: translate(0px, 0px);">
+  <section class="front-section">
     <div class="columns">
       <div class="column is-two-thirds">
-        <h1 class="title"> HELLO I AM BLAEZ </h1>
-        <h2 class="subtitle"> solar car enthusiast, computer science nerd, and video editing guy</h2>
+        <h1 class="futuraTitle" style="font-family: Futura;"> HELLO I AM BLAEZ </h1>
+
+        <h2 class="subtitle" style=" font-family: 'Futura', Arial, Helvetica, sans-serif !important; font-size: 30px;">
+           solar car enthusiast, computer science nerd, and video editing guy
+        </h2>
 
         <!-- Again, credit to bricampgomez.com for this amazing tutorial for overlapping -->
         <div class="image-stack" style="transform: translate(0px, 50px);">
@@ -68,14 +71,30 @@
     </div>
   </section>
 
-  <section class="section">
+  <!-- maybe slightly left align this -->
+  <section class="section has-text-right">
+    <h1 class="subtitle"> me, at solar vehicle competitions working on computer things </h1>
+  </section>
+
+  <!-- middle section about me--> 
+  <section class="section has-background-warning">
     <div class="container">
-      <h1 class="title" align="center"> lala </h1>
-      <p class="subtitle">
-        My first website with <strong>HELLO</strong>!
-      </p>
-      <button class="button is-info">Button</button>
+      <h1 class="title" align="right"> <highlight>&nbsp;What I Work On&nbsp;&nbsp;&nbsp;</highlight></h1>
+    </div>
+
+    <div class="columns">
+      <div class="column">
+        <h1>test</h1>
+      </div>
+      <div class="column">
+        <h1 class="title is-4"><highlight>Embedded Systems</highlight></h1>
+      </div>
+
     </div>
   </section>
+
+
+
+
   </body>
 </html>
