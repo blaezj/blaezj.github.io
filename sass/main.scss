@@ -1,0 +1,41 @@
+// main.scss
+@import "../node_modules/bulma/bulma.scss";
+
+.background-image {
+    background-image: url('images/bOutside.jpg');
+    background-size: cover; /* image cover the entire background */
+    background-position: left; 
+    height: 50vh; 
+    width: 50vw; 
+    border-radius: 50%;
+    border: 5px solid #555;
+}
+
+// THIS WAS TAKEN from https://bricampgomez.com/blog/how-to-overlap-images-in-css/, thank you friend <3
+.image-stack {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    position: relative;
+  }
+
+// THIS WAS TAKEN from https://bricampgomez.com/blog/how-to-overlap-images-in-css/, thank you friend <3
+.image-stack__item--top {
+    grid-column: 1 / span 8;
+    grid-row: 1; 
+    padding-top: 20%; 
+    z-index: 1; 
+  }
+
+// THIS WAS TAKEN from https://bricampgomez.com/blog/how-to-overlap-images-in-css/, thank you friend <3
+
+.image-stack__item--bottom {
+    grid-column: 4 / -1;
+    grid-row: 1; // make this image be on the same row
+}
+
+// small section for
+.small-section {
+    padding: 1rem;
+    margin: auto 30rem;
+    max-width: auto;
+  }
