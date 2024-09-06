@@ -3234,7 +3234,7 @@ table th {
   user-select: none;
 }
 
-.box {
+.box, boxCorners {
   --bulma-box-background-color: var(--bulma-scheme-main);
   --bulma-box-color: var(--bulma-text);
   --bulma-box-radius: var(--bulma-radius-large);
@@ -3244,7 +3244,7 @@ table th {
   --bulma-box-link-active-shadow: inset 0 1px 2px hsla(var(--bulma-scheme-h), var(--bulma-scheme-s), var(--bulma-scheme-invert-l), 0.2), 0 0 0 1px var(--bulma-link);
 }
 
-.box {
+.box, boxCorners {
   background-color: var(--bulma-box-background-color);
   border-radius: var(--bulma-box-radius);
   box-shadow: var(--bulma-box-shadow);
@@ -4689,8 +4689,9 @@ div.icon-text {
   top: 1rem;
 }
 
-.notification .title, .notification .futuraTitle,
+.notification .title, .notification .futuraTitle, .notification .onImageTitle,
 .notification .subtitle,
+.notification .onImageSubtitle,
 .notification .content {
   color: currentColor;
 }
@@ -5606,8 +5607,9 @@ button.tag:active,
   --bulma-tag-background-l-delta: var(--bulma-tag-active-background-l-delta);
 }
 
-.title, .futuraTitle,
-.subtitle {
+.title, .futuraTitle, .onImageTitle,
+.subtitle,
+.onImageSubtitle {
   --bulma-title-color: var(--bulma-text-strong);
   --bulma-title-family: false;
   --bulma-title-size: var(--bulma-size-3);
@@ -5626,119 +5628,126 @@ button.tag:active,
   --bulma-subtitle-strong-weight: var(--bulma-weight-semibold);
 }
 
-.title, .futuraTitle,
-.subtitle {
+.title, .futuraTitle, .onImageTitle,
+.subtitle,
+.onImageSubtitle {
   word-break: break-word;
 }
 
-.title em, .futuraTitle em,
+.title em, .futuraTitle em, .onImageTitle em,
 .title span,
 .futuraTitle span,
+.onImageTitle span,
 .subtitle em,
-.subtitle span {
+.onImageSubtitle em,
+.subtitle span,
+.onImageSubtitle span {
   font-weight: inherit;
 }
 
-.title sub, .futuraTitle sub,
-.subtitle sub {
+.title sub, .futuraTitle sub, .onImageTitle sub,
+.subtitle sub,
+.onImageSubtitle sub {
   font-size: var(--bulma-title-sub-size);
 }
 
-.title sup, .futuraTitle sup,
-.subtitle sup {
+.title sup, .futuraTitle sup, .onImageTitle sup,
+.subtitle sup,
+.onImageSubtitle sup {
   font-size: var(--bulma-title-sup-size);
 }
 
-.title .tag, .futuraTitle .tag,
-.subtitle .tag {
+.title .tag, .futuraTitle .tag, .onImageTitle .tag,
+.subtitle .tag,
+.onImageSubtitle .tag {
   vertical-align: middle;
 }
 
-.title, .futuraTitle {
+.title, .futuraTitle, .onImageTitle {
   color: var(--bulma-title-color);
   font-size: var(--bulma-title-size);
   font-weight: var(--bulma-title-weight);
   line-height: var(--bulma-title-line-height);
 }
 
-.title strong, .futuraTitle strong {
+.title strong, .futuraTitle strong, .onImageTitle strong {
   color: var(--bulma-title-strong-color);
   font-weight: var(--bulma-title-strong-weight);
 }
 
-.title:not(.is-spaced):has(+ .subtitle), .futuraTitle:not(.is-spaced):has(+ .subtitle) {
+.title:not(.is-spaced):has(+ .subtitle, + .onImageSubtitle), .futuraTitle:not(.is-spaced):has(+ .subtitle, + .onImageSubtitle), .onImageTitle:not(.is-spaced):has(+ .subtitle, + .onImageSubtitle) {
   margin-bottom: 0;
 }
 
-.title.is-1, .is-1.futuraTitle {
+.title.is-1, .is-1.futuraTitle, .is-1.onImageTitle {
   font-size: 3rem;
 }
 
-.title.is-2, .is-2.futuraTitle {
+.title.is-2, .is-2.futuraTitle, .is-2.onImageTitle {
   font-size: 2.5rem;
 }
 
-.title.is-3, .is-3.futuraTitle {
+.title.is-3, .is-3.futuraTitle, .is-3.onImageTitle {
   font-size: 2rem;
 }
 
-.title.is-4, .is-4.futuraTitle {
+.title.is-4, .is-4.futuraTitle, .is-4.onImageTitle {
   font-size: 1.5rem;
 }
 
-.title.is-5, .is-5.futuraTitle {
+.title.is-5, .is-5.futuraTitle, .is-5.onImageTitle {
   font-size: 1.25rem;
 }
 
-.title.is-6, .is-6.futuraTitle {
+.title.is-6, .is-6.futuraTitle, .is-6.onImageTitle {
   font-size: 1rem;
 }
 
-.title.is-7, .is-7.futuraTitle {
+.title.is-7, .is-7.futuraTitle, .is-7.onImageTitle {
   font-size: 0.75rem;
 }
 
-.subtitle {
+.subtitle, .onImageSubtitle {
   color: var(--bulma-subtitle-color);
   font-size: var(--bulma-subtitle-size);
   font-weight: var(--bulma-subtitle-weight);
   line-height: var(--bulma-subtitle-line-height);
 }
 
-.subtitle strong {
+.subtitle strong, .onImageSubtitle strong {
   color: var(--bulma-subtitle-strong-color);
   font-weight: var(--bulma-subtitle-strong-weight);
 }
 
-.subtitle:not(.is-spaced):has(+ .title, + .futuraTitle) {
+.subtitle:not(.is-spaced):has(+ .title, + .futuraTitle, + .onImageTitle), .onImageSubtitle:not(.is-spaced):has(+ .title, + .futuraTitle, + .onImageTitle) {
   margin-bottom: 0;
 }
 
-.subtitle.is-1 {
+.subtitle.is-1, .is-1.onImageSubtitle {
   font-size: 3rem;
 }
 
-.subtitle.is-2 {
+.subtitle.is-2, .is-2.onImageSubtitle {
   font-size: 2.5rem;
 }
 
-.subtitle.is-3 {
+.subtitle.is-3, .is-3.onImageSubtitle {
   font-size: 2rem;
 }
 
-.subtitle.is-4 {
+.subtitle.is-4, .is-4.onImageSubtitle {
   font-size: 1.5rem;
 }
 
-.subtitle.is-5 {
+.subtitle.is-5, .is-5.onImageSubtitle {
   font-size: 1.25rem;
 }
 
-.subtitle.is-6 {
+.subtitle.is-6, .is-6.onImageSubtitle {
   font-size: 1rem;
 }
 
-.subtitle.is-7 {
+.subtitle.is-7, .is-7.onImageSubtitle {
   font-size: 0.75rem;
 }
 
@@ -13981,12 +13990,12 @@ label.panel-block:hover {
   --bulma-tabs-link-active-color: hsl(var(--bulma-hero-h), var(--bulma-hero-s), var(--bulma-hero-background-l));
 }
 
-.hero.is-white .subtitle {
+.hero.is-white .subtitle, .hero.is-white .onImageSubtitle {
   --bulma-subtitle-color: hsl(var(--bulma-hero-h), var(--bulma-hero-s), var(--bulma-hero-color-l));
   --bulma-subtitle-strong-color: hsl(var(--bulma-hero-h), var(--bulma-hero-s), var(--bulma-hero-color-l));
 }
 
-.hero.is-white .title, .hero.is-white .futuraTitle {
+.hero.is-white .title, .hero.is-white .futuraTitle, .hero.is-white .onImageTitle {
   --bulma-title-color: hsl(var(--bulma-hero-h), var(--bulma-hero-s), var(--bulma-hero-color-l));
   --bulma-title-strong-color: hsl(var(--bulma-hero-h), var(--bulma-hero-s), var(--bulma-hero-color-l));
 }
@@ -14024,12 +14033,12 @@ label.panel-block:hover {
   --bulma-tabs-link-active-color: hsl(var(--bulma-hero-h), var(--bulma-hero-s), var(--bulma-hero-background-l));
 }
 
-.hero.is-black .subtitle {
+.hero.is-black .subtitle, .hero.is-black .onImageSubtitle {
   --bulma-subtitle-color: hsl(var(--bulma-hero-h), var(--bulma-hero-s), var(--bulma-hero-color-l));
   --bulma-subtitle-strong-color: hsl(var(--bulma-hero-h), var(--bulma-hero-s), var(--bulma-hero-color-l));
 }
 
-.hero.is-black .title, .hero.is-black .futuraTitle {
+.hero.is-black .title, .hero.is-black .futuraTitle, .hero.is-black .onImageTitle {
   --bulma-title-color: hsl(var(--bulma-hero-h), var(--bulma-hero-s), var(--bulma-hero-color-l));
   --bulma-title-strong-color: hsl(var(--bulma-hero-h), var(--bulma-hero-s), var(--bulma-hero-color-l));
 }
@@ -14067,12 +14076,12 @@ label.panel-block:hover {
   --bulma-tabs-link-active-color: hsl(var(--bulma-hero-h), var(--bulma-hero-s), var(--bulma-hero-background-l));
 }
 
-.hero.is-light .subtitle {
+.hero.is-light .subtitle, .hero.is-light .onImageSubtitle {
   --bulma-subtitle-color: hsl(var(--bulma-hero-h), var(--bulma-hero-s), var(--bulma-hero-color-l));
   --bulma-subtitle-strong-color: hsl(var(--bulma-hero-h), var(--bulma-hero-s), var(--bulma-hero-color-l));
 }
 
-.hero.is-light .title, .hero.is-light .futuraTitle {
+.hero.is-light .title, .hero.is-light .futuraTitle, .hero.is-light .onImageTitle {
   --bulma-title-color: hsl(var(--bulma-hero-h), var(--bulma-hero-s), var(--bulma-hero-color-l));
   --bulma-title-strong-color: hsl(var(--bulma-hero-h), var(--bulma-hero-s), var(--bulma-hero-color-l));
 }
@@ -14110,12 +14119,12 @@ label.panel-block:hover {
   --bulma-tabs-link-active-color: hsl(var(--bulma-hero-h), var(--bulma-hero-s), var(--bulma-hero-background-l));
 }
 
-.hero.is-dark .subtitle {
+.hero.is-dark .subtitle, .hero.is-dark .onImageSubtitle {
   --bulma-subtitle-color: hsl(var(--bulma-hero-h), var(--bulma-hero-s), var(--bulma-hero-color-l));
   --bulma-subtitle-strong-color: hsl(var(--bulma-hero-h), var(--bulma-hero-s), var(--bulma-hero-color-l));
 }
 
-.hero.is-dark .title, .hero.is-dark .futuraTitle {
+.hero.is-dark .title, .hero.is-dark .futuraTitle, .hero.is-dark .onImageTitle {
   --bulma-title-color: hsl(var(--bulma-hero-h), var(--bulma-hero-s), var(--bulma-hero-color-l));
   --bulma-title-strong-color: hsl(var(--bulma-hero-h), var(--bulma-hero-s), var(--bulma-hero-color-l));
 }
@@ -14153,12 +14162,12 @@ label.panel-block:hover {
   --bulma-tabs-link-active-color: hsl(var(--bulma-hero-h), var(--bulma-hero-s), var(--bulma-hero-background-l));
 }
 
-.hero.is-text .subtitle {
+.hero.is-text .subtitle, .hero.is-text .onImageSubtitle {
   --bulma-subtitle-color: hsl(var(--bulma-hero-h), var(--bulma-hero-s), var(--bulma-hero-color-l));
   --bulma-subtitle-strong-color: hsl(var(--bulma-hero-h), var(--bulma-hero-s), var(--bulma-hero-color-l));
 }
 
-.hero.is-text .title, .hero.is-text .futuraTitle {
+.hero.is-text .title, .hero.is-text .futuraTitle, .hero.is-text .onImageTitle {
   --bulma-title-color: hsl(var(--bulma-hero-h), var(--bulma-hero-s), var(--bulma-hero-color-l));
   --bulma-title-strong-color: hsl(var(--bulma-hero-h), var(--bulma-hero-s), var(--bulma-hero-color-l));
 }
@@ -14196,12 +14205,12 @@ label.panel-block:hover {
   --bulma-tabs-link-active-color: hsl(var(--bulma-hero-h), var(--bulma-hero-s), var(--bulma-hero-background-l));
 }
 
-.hero.is-primary .subtitle {
+.hero.is-primary .subtitle, .hero.is-primary .onImageSubtitle {
   --bulma-subtitle-color: hsl(var(--bulma-hero-h), var(--bulma-hero-s), var(--bulma-hero-color-l));
   --bulma-subtitle-strong-color: hsl(var(--bulma-hero-h), var(--bulma-hero-s), var(--bulma-hero-color-l));
 }
 
-.hero.is-primary .title, .hero.is-primary .futuraTitle {
+.hero.is-primary .title, .hero.is-primary .futuraTitle, .hero.is-primary .onImageTitle {
   --bulma-title-color: hsl(var(--bulma-hero-h), var(--bulma-hero-s), var(--bulma-hero-color-l));
   --bulma-title-strong-color: hsl(var(--bulma-hero-h), var(--bulma-hero-s), var(--bulma-hero-color-l));
 }
@@ -14239,12 +14248,12 @@ label.panel-block:hover {
   --bulma-tabs-link-active-color: hsl(var(--bulma-hero-h), var(--bulma-hero-s), var(--bulma-hero-background-l));
 }
 
-.hero.is-link .subtitle {
+.hero.is-link .subtitle, .hero.is-link .onImageSubtitle {
   --bulma-subtitle-color: hsl(var(--bulma-hero-h), var(--bulma-hero-s), var(--bulma-hero-color-l));
   --bulma-subtitle-strong-color: hsl(var(--bulma-hero-h), var(--bulma-hero-s), var(--bulma-hero-color-l));
 }
 
-.hero.is-link .title, .hero.is-link .futuraTitle {
+.hero.is-link .title, .hero.is-link .futuraTitle, .hero.is-link .onImageTitle {
   --bulma-title-color: hsl(var(--bulma-hero-h), var(--bulma-hero-s), var(--bulma-hero-color-l));
   --bulma-title-strong-color: hsl(var(--bulma-hero-h), var(--bulma-hero-s), var(--bulma-hero-color-l));
 }
@@ -14282,12 +14291,12 @@ label.panel-block:hover {
   --bulma-tabs-link-active-color: hsl(var(--bulma-hero-h), var(--bulma-hero-s), var(--bulma-hero-background-l));
 }
 
-.hero.is-info .subtitle {
+.hero.is-info .subtitle, .hero.is-info .onImageSubtitle {
   --bulma-subtitle-color: hsl(var(--bulma-hero-h), var(--bulma-hero-s), var(--bulma-hero-color-l));
   --bulma-subtitle-strong-color: hsl(var(--bulma-hero-h), var(--bulma-hero-s), var(--bulma-hero-color-l));
 }
 
-.hero.is-info .title, .hero.is-info .futuraTitle {
+.hero.is-info .title, .hero.is-info .futuraTitle, .hero.is-info .onImageTitle {
   --bulma-title-color: hsl(var(--bulma-hero-h), var(--bulma-hero-s), var(--bulma-hero-color-l));
   --bulma-title-strong-color: hsl(var(--bulma-hero-h), var(--bulma-hero-s), var(--bulma-hero-color-l));
 }
@@ -14325,12 +14334,12 @@ label.panel-block:hover {
   --bulma-tabs-link-active-color: hsl(var(--bulma-hero-h), var(--bulma-hero-s), var(--bulma-hero-background-l));
 }
 
-.hero.is-success .subtitle {
+.hero.is-success .subtitle, .hero.is-success .onImageSubtitle {
   --bulma-subtitle-color: hsl(var(--bulma-hero-h), var(--bulma-hero-s), var(--bulma-hero-color-l));
   --bulma-subtitle-strong-color: hsl(var(--bulma-hero-h), var(--bulma-hero-s), var(--bulma-hero-color-l));
 }
 
-.hero.is-success .title, .hero.is-success .futuraTitle {
+.hero.is-success .title, .hero.is-success .futuraTitle, .hero.is-success .onImageTitle {
   --bulma-title-color: hsl(var(--bulma-hero-h), var(--bulma-hero-s), var(--bulma-hero-color-l));
   --bulma-title-strong-color: hsl(var(--bulma-hero-h), var(--bulma-hero-s), var(--bulma-hero-color-l));
 }
@@ -14368,12 +14377,12 @@ label.panel-block:hover {
   --bulma-tabs-link-active-color: hsl(var(--bulma-hero-h), var(--bulma-hero-s), var(--bulma-hero-background-l));
 }
 
-.hero.is-warning .subtitle {
+.hero.is-warning .subtitle, .hero.is-warning .onImageSubtitle {
   --bulma-subtitle-color: hsl(var(--bulma-hero-h), var(--bulma-hero-s), var(--bulma-hero-color-l));
   --bulma-subtitle-strong-color: hsl(var(--bulma-hero-h), var(--bulma-hero-s), var(--bulma-hero-color-l));
 }
 
-.hero.is-warning .title, .hero.is-warning .futuraTitle {
+.hero.is-warning .title, .hero.is-warning .futuraTitle, .hero.is-warning .onImageTitle {
   --bulma-title-color: hsl(var(--bulma-hero-h), var(--bulma-hero-s), var(--bulma-hero-color-l));
   --bulma-title-strong-color: hsl(var(--bulma-hero-h), var(--bulma-hero-s), var(--bulma-hero-color-l));
 }
@@ -14411,12 +14420,12 @@ label.panel-block:hover {
   --bulma-tabs-link-active-color: hsl(var(--bulma-hero-h), var(--bulma-hero-s), var(--bulma-hero-background-l));
 }
 
-.hero.is-danger .subtitle {
+.hero.is-danger .subtitle, .hero.is-danger .onImageSubtitle {
   --bulma-subtitle-color: hsl(var(--bulma-hero-h), var(--bulma-hero-s), var(--bulma-hero-color-l));
   --bulma-subtitle-strong-color: hsl(var(--bulma-hero-h), var(--bulma-hero-s), var(--bulma-hero-color-l));
 }
 
-.hero.is-danger .title, .hero.is-danger .futuraTitle {
+.hero.is-danger .title, .hero.is-danger .futuraTitle, .hero.is-danger .onImageTitle {
   --bulma-title-color: hsl(var(--bulma-hero-h), var(--bulma-hero-s), var(--bulma-hero-color-l));
   --bulma-title-strong-color: hsl(var(--bulma-hero-h), var(--bulma-hero-s), var(--bulma-hero-color-l));
 }
@@ -14572,8 +14581,9 @@ label.panel-block:hover {
   justify-content: center;
 }
 
-.level-item .title, .level-item .futuraTitle,
-.level-item .subtitle {
+.level-item .title, .level-item .futuraTitle, .level-item .onImageTitle,
+.level-item .subtitle,
+.level-item .onImageSubtitle {
   margin-bottom: 0;
 }
 
@@ -22498,21 +22508,62 @@ has-background-danger.is-hoverable:active {
 }
 
 .buttonSquare {
-  padding: 8px;
   width: 50px;
-  height: 25px;
+  height: 30px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 @font-face {
   font-family: "Futura";
   src: url("../fonts/futura/futur.ttf");
 }
-.futuraTitle {
+.futuraTitle, .onImageTitle {
   font-family: "Futura", Arial, Helvetica, sans-serif !important;
 }
 
 highlight {
   background-color: #18141c;
+}
+
+highlightPoint {
+  background-color: #18141c;
+  display: inline-block;
+  padding: 0 5px;
+}
+
+li.black:before {
+  background-color: #18141c;
+}
+
+p.futura {
+  font-family: "Futura", Arial, Helvetica, sans-serif !important;
+}
+
+h1.futura {
+  font-family: "Futura", Arial, Helvetica, sans-serif !important;
+}
+
+.leftAlign {
+  height: 25px;
+  width: 25px;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.textContainer {
+  position: relative;
+}
+
+.onImageTitle {
+  position: absolute;
+}
+
+.onImageSubtitle {
+  position: absolute;
+  font-family: "Futura", Arial, Helvetica, sans-serif !important;
 }
 
 /*# sourceMappingURL=main.css.map */

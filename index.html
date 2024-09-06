@@ -6,95 +6,249 @@
     <title>hullo</title>
     <link rel="stylesheet" href="css/main.css"> 
   </head>
-  <body>
+  <body class="has-background-black-ter">
 
-  <!-- drop down bar and top section-->
-  <section class="section has-background-warning small-section"> 
-    <div class="dropdown is-hoverable">
-      <div class="dropdown-trigger">
-        <button class="buttonSquare" aria-haspopup="true" aria-controls="dropdown-menu4">
-         <span>hello</span>
-          <span class="icon is-small">
-            <i class="fas fa-angle-down" aria-hidden="true"></i>
-          </span>
-        </button>
-      </div>
-      <div class="dropdown-menu" id="dropdown-menu4" role="menu">
-        <div class="dropdown-content">
-          <div class="dropdown-item">
-            <p>
-              <strong>about me</strong>
-            </p>
+<!-- drop down bar and top section-->
+<!-- <section class="section has-background-warning small-section">  -->
+  <nav class="navbar is-warning" role="navigation" aria-label="main navigation">  
+    <div class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item">
+          <button class="button" onclick="window.open('https://github.com/blaezj', '_blank')">
+            <span>Home</span>
+          </button>
+        </a>
+  
+        <a class="navbar-item">
+          About Me
+        </a>
+  
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            Navigation
+          </a>
+  
+          <div class="navbar-dropdown has-background-black-ter">
+            <a class="navbar-item has-background-black-ter">
+              Work Portfolio
+            </a>
+            <a class="navbar-item has-background-black-ter">
+              More About Me
+            </a>
+            <a class="navbar-item has-background-black-ter">
+              Contact
+            </a>
           </div>
-          <div class="dropdown-item">
-            <p>
-              <strong>my work</strong>
-            </p>
+        </div>
+      </div>
+  
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="buttons has-addons">
+            <button class="button" onclick="window.open('https://github.com/blaezj', '_blank')">
+              <span class="icon">
+                <img src="images/github.png">
+              </span>
+              <span>Github</span>
+            </button>
+            <button class="button" onclick="window.open('https://www.instagram.com/blaez.j/', '_blank')">
+              <span class="icon">
+                <img src="images/instagram.png">
+              </span>
+              <span>Instagram</span>
+            </button>
+            <button class="button" onclick="window.open('https://www.linkedin.com/in/blaez-jibben-8b5957205/', '_blank')">
+              <span class="icon">
+                <img src="images/linkedin.png">
+              </span>
+              <span>LinkedIn</span>
+            </button>
           </div>
         </div>
       </div>
     </div>
+  </nav>
 
-  </section>
 
-  <section class="front-section">
-    <div class="columns">
-      <div class="column is-two-thirds">
-        <h1 class="futuraTitle" style="font-family: Futura;"> HELLO I AM BLAEZ </h1>
 
-        <h2 class="subtitle" style=" font-family: 'Futura', Arial, Helvetica, sans-serif !important; font-size: 30px;">
-           solar car enthusiast, computer science nerd, and video editing guy
-        </h2>
-
-        <!-- Again, credit to bricampgomez.com for this amazing tutorial for overlapping -->
-        <div class="image-stack" style="transform: translate(0px, 50px);">
-          <div class="image-stack__item image-stack__item--top">
-            <div class="box has-background-warning">
-              <img src="images/bAndN.jpg">
-            </div>
+        <!-- <div class="dropdown is-hoverable">
+          <div class="dropdown-trigger">
+            <button class="button is-hovered has-background-black-bis" aria-haspopup="true" aria-controls="dropdown-menu4">
+              <span>nav</span>
+            </button>
           </div>
-          <div class="image-stack__item image-stack__item--bottom">
-            <div class="box has-background-warning">
-              <img src="images/roseSide.jpg">
-            </div>
-          </div>
-       </div>
+          <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+            <div class="dropdown-content">
+              <div class="dropdown-item">
+                <p>
+                  <strong>about me</strong>
+                </p>
+              </div>
+              <div class="dropdown-item">
+                <p>
+                  <strong>my work</strong>
+                </p>
+              </div>
+            </div> -->
+<!-- </section> -->
+
+
+  <!-- start of columned page -->
+  <div class="columns is-gapless no-gap"> 
+  
+    <!-- start of column of info page -->
+    <div class="column">
+      <div class="textContainer">
+      <section class="front-section has-background-black-ter" style="margin: 0%; padding-bottom: 0%; padding-right: 0%;">
+
+        <h1 class="onImageTitle" style="font-family: Futura; font-size: 130px; margin-right: 200px;"> HELLO I'M BLAEZ </h1>
+          <h2 class="onImageSubtitle" style="margin-right: 700px; margin-top: 300px; font-family: Futura;  font-size: 35px; left: 50px;">
+            <strong>Solar Car Enthusiast Computer Science Nerd and Video Editing Guy </strong>
+          </h2>
 
       </div>
-      <div class="column">
-        <div class="box has-background-warning" style="transform: translate(0px, 25px);">
-          <figure class="image">
-            <img class="is-large" src="images/bOutsideLong.jpg" height="400" width="400"/> 
-          </figure>
+
+
+
+          <!-- Again, credit to bricampgomez.com for this amazing tutorial for overlapping
+            <div class="image-stack" style="transform: translate(0px, 50px);">
+              <div class="image-stack__item image-stack__item--top">
+                <div class="box has-background-warning">
+                  <img src="images/bAndN.jpg">
+                </div>
+              </div>
+              <div class="image-stack__item image-stack__item--bottom">
+                <div class="box has-background-warning">
+                  <img src="images/roseSide.jpg">
+                </div>
+              </div>
+          </div> -->
+
+
+          <div style="margin-bottom: -6px;">
+            <img src="images/me_in_grass_trim5.png" style="-webkit-transform: scaleX(-1);
+            transform: scaleX(-1);">
+          </div>
+      </section>
+
+      <!-- maybe slightly left align this
+      <section class="front-section has-text-right has-background-black-ter">
+        <h1 class="subtitle"> me, at solar vehicle competitions working on computer things </h1>
+      </section> -->
+
+      <!-- middle section about me--> 
+
+      <section class="section has-background-warning is-two-fifths" 
+      style="border-bottom-right-radius: 5%;
+      margin-top:0px">
+
+        <div class="box content" style="box-sizing: 10px; box-shadow: 100px;">
+          <h1 class="title" align="left" style="margin-bottom: 0rem; font-size: 70px; letter-spacing: 1px;"> 
+            <highlight>ABOUT ME&nbsp;</highlight>
+          </h1>
+
+          <p class="Futura" style="color: white; font-size: 28px;">
+            <highlight>I’m an Embedded Software Engineer and Junior Computer Science Student with a passion for sustainability. 
+            My love for computer science, leadership, and all things video has driven me to achieve remarkable milestones.
+            During my college years, I have:</highlight>
+        </p>
+        <ol style="color: white; font-size: 30px;">
+            <li class="black" style="list-style-type: disc;"><highlight>Competed and placed podium in 2 Forumla Sun Grand Prix, and 1 American&nbsp;&nbsp; Solar Challenge.</highlight></li>
+            <li style="list-style-type: disc;"><highlight>Built an Interactive Driver Display for ROSE (APP'S Solar Car) </highlight></li>
+            <li style="list-style-type: disc;"><highlight>Rebooted and led the Appalachian Society for Computing, Informatics&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; and Innovation</highlight></li>
+            <li style="list-style-type: disc;"><highlight>Worked for and with the Quality Enhancement Plan Committee</highlight></li>
+        </ol>
+        <p class="Futura" style="color: white; font-size: 28px;"> 
+          Curious to know more about what I've worked on?<strong> Let’s connect! </strong>
+        </p>
+        
+      </div>
+      </section> 
+
+      <section class="section" style="margin-bottom: 50px;">
+        <h1 class="Futura title is-1 has-text-centered" style="font-style: italic; font-size: 50px;"> 
+          <highlight> <strong>  INTERESTED TO FIND OUT MORE? </strong> </highlight> 
+        </h1>
+
+
+        <div class="columns is-7" style="margin-top: 20px; column-gap: 1.75rem;">
+          <div class="column box content">
+            <h1 class="title is-4">
+              Check out my work portfolio and resume <strong>below</strong>.
+            </h1>
+
+            <div class="buttons is-centered" style="margin-top: 30px;">
+              <button class="button is-rounded is-large">Work Portfolio</button>
+            </div>
+          </div>
+
+          <div class="column box">
+            <h1 class="title is-4">
+              Check out my experience with Python, C/C++, and other languages below.
+            </h1>
+
+            <div class="buttons is-centered" style="margin-top: 30px;">
+              <button class="button is-rounded is-large">Coding Experience</button>
+            </div>
+
+          </div>
+
+          <div class="column box">
+            <h1 class="title is-4">
+              Want to know me better? Check out my bio below.
+            </h1>
+
+            <div class="buttons is-centered" style="margin-top: 55px;">
+              <button class="button is-rounded is-large">Learn About Me</button>
+            </div>
+
+          </div>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- maybe slightly left align this -->
-  <section class="section has-text-right">
-    <h1 class="subtitle"> me, at solar vehicle competitions working on computer things </h1>
-  </section>
-
-  <!-- middle section about me--> 
-  <section class="section has-background-warning">
-    <div class="container">
-      <h1 class="title" align="right"> <highlight>&nbsp;What I Work On&nbsp;&nbsp;&nbsp;</highlight></h1>
-    </div>
-
-    <div class="columns">
-      <div class="column">
-        <h1>test</h1>
-      </div>
-      <div class="column">
-        <h1 class="title is-4"><highlight>Embedded Systems</highlight></h1>
-      </div>
-
-    </div>
-  </section>
 
 
+      </section>
 
 
+      <section class="section has-background-black-bis is-small">
+        <div class="buttons is-centered" style="margin-bottom: 20px;">
+      
+          <a href="https://github.com/blaezj" target="_blank">
+            <button class="button">
+              <span class="icon">
+                <img src="images/github.png">
+                <!-- <i class="fas fa-github"></i> -->
+              </span>
+              <span>Github</span>
+            </button>
+          </a>
+        
+          <a href="https://www.instagram.com/blaez.j/" target="_blank">
+            <button class="button">
+              <span class="icon">
+                <img src="images/instagram.png">
+              </span>
+              <span>Instagram</span>
+            </button>
+          </a>
+          
+          <a href="https://www.linkedin.com/in/blaez-jibben-8b5957205/" target="_blank">
+            <button class="button">
+              <span class="icon">
+                <img src="images/linkedin.png">
+              </span>
+              <span>LinkedIn</span>
+            </button>
+          </a>
+        </div>
+
+        <!-- license for bulma (required) -->
+        <div class="bd-footer-tsp has-text-centered">
+          Source code licensed <a href="https://opensource.org/licenses/mit-license.php" target="_blank">MIT</a>.
+          Website content licensed <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a>
+        </div>
+
+      </section>
+    
+  </div>
   </body>
 </html>

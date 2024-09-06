@@ -37,6 +37,7 @@
 .small-section {
     padding: 1rem;
     margin: auto auto;
+    //height: 3rem;
     width: 1000rem;
     align-items: center;
   }
@@ -50,16 +51,20 @@
 .buttonSquare {
   @extend .button;
   //border-radius: 8px;
-  padding: 8px; // setting this to 0 centers any text
+  //padding: 8px; // setting this to 0 centers any text
   //font-size: 1.5rem; 
   width: 50px; 
-  height: 25px; 
+  height: 30px; 
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 @font-face {
   font-family: 'Futura';
   src: url('../fonts/futura/futur.ttf');
 }
+
+
 
 .futuraTitle {
   @extend .title;
@@ -69,3 +74,54 @@
 highlight {
   background-color: #18141c;
 }
+
+highlightPoint {
+  background-color: #18141c;
+  display: inline-block;
+  padding: 0 5px;
+}
+
+li.black:before {
+  background-color: #18141c;
+}
+
+p.futura{
+  font-family: 'Futura', Arial, Helvetica, sans-serif !important;
+}
+
+h1.futura{
+  font-family: 'Futura', Arial, Helvetica, sans-serif !important;
+}
+
+boxCorners {
+  @extend .box;
+  // border-bottom-right-radius: 100%;
+  // border-top-right-radius: 100%;
+  // border-radius: 100%;
+}
+
+//thanks you internet
+.leftAlign {
+  height: 25px;
+  width: 25px;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.textContainer {
+  position: relative;
+}
+
+.onImageTitle {
+  @extend .futuraTitle;
+  position: absolute;
+}
+.onImageSubtitle {
+  @extend .subtitle;
+  position: absolute;
+  font-family: 'Futura', Arial, Helvetica, sans-serif !important;
+
+}
+
