@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>hullo</title>
+    <link rel="stylesheet" href="css/main.css"> 
+  </head>
+
+  <body class="has-background-black-ter">
+
+    <!-- nav bar -->
+    <nav class="navbar is-warning" role="navigation" aria-label="main navigation">  
+        <div class="navbar-menu">
+          <div class="navbar-start">
+            <a class="navbar-item" href="index.html">
+              <button class="button">
+                <span>Home</span>
+              </button>
+            </a>
+      
+            <a class="navbar-item" href="index.html#aboutme">
+              About Me
+            </a>
+      
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link">
+                Navigation
+              </a>
+      
+              <div class="navbar-dropdown has-background-black-ter">
+                <a class="navbar-item has-background-black-ter" href="work.html">
+                  Work Portfolio
+                </a>
+                <a class="navbar-item has-background-black-ter" href="coding.html">
+                    Coding Expierence
+                </a>
+                <a class="navbar-item has-background-black-ter" href="about.html">
+                  More About Me
+                </a>
+                <a class="navbar-item has-background-black-ter" href="contact.html">
+                  Contact
+                </a>
+              </div>
+            </div>
+          </div>
+      
+          <div class="navbar-end">
+            <div class="navbar-item">
+              <div class="buttons has-addons">
+                <button class="button" onclick="window.open('https://github.com/blaezj', '_blank')">
+                  <span class="icon">
+                    <img src="images/github.png">
+                  </span>
+                  <span>Github</span>
+                </button>
+                <button class="button" onclick="window.open('https://www.instagram.com/blaez.j/', '_blank')">
+                  <span class="icon">
+                    <img src="images/instagram.png">
+                  </span>
+                  <span>Instagram</span>
+                </button>
+                <button class="button" onclick="window.open('https://www.linkedin.com/in/blaez-jibben-8b5957205/', '_blank')">
+                  <span class="icon">
+                    <img src="images/linkedin.png">
+                  </span>
+                  <span>LinkedIn</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </nav>
+
+    
+    <!-- where the main body is -->
+    <section class="section is-small">
+
+      <h1 class="title has-text-centered" style="margin-bottom: 25px;">
+        Work Portfolio
+      </h1>
+
+      <!-- driver display -->
+      <div class="box columns" style="margin-bottom: 40px;">
+        <div class="box column">
+
+          <!-- display photo -->
+          <figure class="image">
+            <img src="images/display.jpg" />
+          </figure>        
+
+        </div>
+        
+        <div class="box column">
+          <h1 class = 'title'> Driver Display </h1>
+          <h2 class = 'subtitle'> MAY 2024 - JULY 2024 </h2>
+
+          <p> 
+            Over 4 months, I successfully developed a Driver Display that interfaces with the CANBUS of ROSE. 
+            The system decodes CANBUS data using a Raspberry Pi 3B+ connected via a PiCAN2 hat.
+            The data is then organized through a Python dictionary, added to a data queue, and subsequently 
+            dequeued to update the display, which was created using Tkinter.
+            <br><br>
+            Throughout this project, I gained valuable skills such as physically decoding data, 
+            handling threads in a system for maximum efficiency, 
+            reinforcing my proficiency in Python, planning a development timeline, 
+            interfacing with CANBUS, and overall technical experience with EVS
+          </p>
+        </div>
+      </div>
+
+      <!-- arduino -->
+      <div class="box columns" style="margin-bottom: 40px;">
+       
+        <div class="box column">
+          <h1 class = 'title'> ARDUINO Pulse Counter </h1>
+          <h2 class = 'subtitle'> June 2024 - JULY 2024 </h2>
+
+          <p> 
+            Due to our motors having an error with sending RPM via CAN, we had to improvise.
+            I aided into the development of a Arduino Pulse counter, which would count
+            the pulses from the MITSUBA 2096Ds in order to calculate RPM, and later speed. The second interation of the device 
+            was soddered and built by me, with the code being developed by my peers
+            and I.
+            <br><br>
+            Throughout this project, I gained valuable skills such soddering, ARDUINO work, pair-programming,
+            RX and TX on a CANLine, and troubleshooting speedometer values.
+          </p>
+        </div>
+
+        <div class="box column">
+
+          <!-- arduino photo -->
+          <figure class="image">
+            <img src="images/arduino.jpg" />
+          </figure>        
+
+        </div>
+
+      </div>
+    </div>
+      
+
+      <!-- tablet work -->
+      <div class="box columns" style="margin-bottom: 40px;">
+       
+        <div class="box column">
+          <h1 class = 'title'> TABLET Style Changes </h1>
+          <h2 class = 'subtitle'> May 2023 - June 2023 </h2>
+
+          <p> 
+            My first year on the team in 2023 included learning valuable programming, electrical, and teamwork skills.
+            One of my first projects on the team was a customization style for our tablet based display system at the time,
+            which was built in Dart. Myself, along with another member John Waugh, created a light mode for the previous 
+            dark-mode tablet, allowing drivers to more easily see the screen under bright sun.
+            <br><br>
+            Throughout this project, I gained valuable skills such pair-programming, dart programming, and android device programming.
+          </p>
+        </div>
+
+        <div class="box column">
+
+          <!-- tablet photo -->
+          <figure class="image">
+            <img src="images/android.webp" />
+          </figure>        
+
+        </div>
+
+      </div>
+
+
+      <!-- ASCII club -->
+      <div class="box columns" style="margin-bottom: 40px;">
+        <div class="box column">
+
+          <div class="box column">
+            <h1 class = 'title'> Appalachian Society for Computing, Informatics, and Innovation </h1>
+            <h2 class = 'subtitle'> April 2024 - PRESENT </h2>
+            <p> 
+              Revitalized the Appalachian Society for Computing, Informatics, and Innovation,
+              the premier Computer Science Club at Appalachian State University.
+              Currently spearheading a team of officers to cultivate a vibrant community of Computer Science students,
+              promoting project development, collaboration, and the enhancement of individual computer science skills.
+            </p>
+          </div>
+
+          <!-- display photo -->
+          <figure class="image">
+            <img src="images/bAndN.jpg" />
+          </figure>        
+
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+    <!-- down section -->
+    <section class="section has-background-black-bis is-small">
+      <div class="buttons is-centered" style="margin-bottom: 20px;">
+
+        <a href="https://github.com/blaezj" target="_blank">
+          <button class="button">
+            <span class="icon">
+              <img src="images/github.png">
+              <!-- <i class="fas fa-github"></i> -->
+            </span>
+            <span>Github</span>
+          </button>
+        </a>
+      
+        <a href="https://www.instagram.com/blaez.j/" target="_blank">
+          <button class="button">
+            <span class="icon">
+              <img src="images/instagram.png">
+            </span>
+            <span>Instagram</span>
+          </button>
+        </a>
+        
+        <a href="https://www.linkedin.com/in/blaez-jibben-8b5957205/" target="_blank">
+          <button class="button">
+            <span class="icon">
+              <img src="images/linkedin.png">
+            </span>
+            <span>LinkedIn</span>
+          </button>
+        </a>
+
+      </div>
+
+      <!-- license for bulma (required) -->
+      <div class="bd-footer-tsp has-text-centered">
+        Source code licensed <a href="https://opensource.org/licenses/mit-license.php" target="_blank">MIT</a>.
+        Website content licensed <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a>
+      </div>
+
+    </section>
+
+  </body>
+</html>

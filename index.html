@@ -10,87 +10,68 @@
 
 <!-- drop down bar and top section-->
 <!-- <section class="section has-background-warning small-section">  -->
-  <nav class="navbar is-warning" role="navigation" aria-label="main navigation">  
-    <div class="navbar-menu">
-      <div class="navbar-start">
-        <a class="navbar-item">
-          <button class="button" onclick="window.open('https://github.com/blaezj', '_blank')">
-            <span>Home</span>
-          </button>
-        </a>
   
-        <a class="navbar-item">
-          About Me
+<nav class="navbar is-warning" role="navigation" aria-label="main navigation">  
+  <div class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item" href="index.html">
+        <button class="button">
+          <span>Home</span>
+        </button>
+      </a>
+
+      <a class="navbar-item" href="#aboutme">
+        About Me
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          Navigation
         </a>
-  
-        <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link">
-            Navigation
+
+        <div class="navbar-dropdown has-background-black-ter">
+          <a class="navbar-item has-background-black-ter" href="work.html">
+            Work Portfolio
           </a>
-  
-          <div class="navbar-dropdown has-background-black-ter">
-            <a class="navbar-item has-background-black-ter">
-              Work Portfolio
-            </a>
-            <a class="navbar-item has-background-black-ter">
-              More About Me
-            </a>
-            <a class="navbar-item has-background-black-ter">
-              Contact
-            </a>
-          </div>
-        </div>
-      </div>
-  
-      <div class="navbar-end">
-        <div class="navbar-item">
-          <div class="buttons has-addons">
-            <button class="button" onclick="window.open('https://github.com/blaezj', '_blank')">
-              <span class="icon">
-                <img src="images/github.png">
-              </span>
-              <span>Github</span>
-            </button>
-            <button class="button" onclick="window.open('https://www.instagram.com/blaez.j/', '_blank')">
-              <span class="icon">
-                <img src="images/instagram.png">
-              </span>
-              <span>Instagram</span>
-            </button>
-            <button class="button" onclick="window.open('https://www.linkedin.com/in/blaez-jibben-8b5957205/', '_blank')">
-              <span class="icon">
-                <img src="images/linkedin.png">
-              </span>
-              <span>LinkedIn</span>
-            </button>
-          </div>
+          <a class="navbar-item has-background-black-ter" href="coding.html">
+              Coding Expierence
+          </a>
+          <a class="navbar-item has-background-black-ter" href="about.html">
+            More About Me
+          </a>
+          <a class="navbar-item has-background-black-ter" href="contact.html">
+            Contact
+          </a>
         </div>
       </div>
     </div>
-  </nav>
 
-
-
-        <!-- <div class="dropdown is-hoverable">
-          <div class="dropdown-trigger">
-            <button class="button is-hovered has-background-black-bis" aria-haspopup="true" aria-controls="dropdown-menu4">
-              <span>nav</span>
-            </button>
-          </div>
-          <div class="dropdown-menu" id="dropdown-menu4" role="menu">
-            <div class="dropdown-content">
-              <div class="dropdown-item">
-                <p>
-                  <strong>about me</strong>
-                </p>
-              </div>
-              <div class="dropdown-item">
-                <p>
-                  <strong>my work</strong>
-                </p>
-              </div>
-            </div> -->
-<!-- </section> -->
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="buttons has-addons">
+          <button class="button" onclick="window.open('https://github.com/blaezj', '_blank')">
+            <span class="icon">
+              <img src="images/github.png">
+            </span>
+            <span>Github</span>
+          </button>
+          <button class="button" onclick="window.open('https://www.instagram.com/blaez.j/', '_blank')">
+            <span class="icon">
+              <img src="images/instagram.png">
+            </span>
+            <span>Instagram</span>
+          </button>
+          <button class="button" onclick="window.open('https://www.linkedin.com/in/blaez-jibben-8b5957205/', '_blank')">
+            <span class="icon">
+              <img src="images/linkedin.png">
+            </span>
+            <span>LinkedIn</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
 
 
   <!-- start of columned page -->
@@ -101,8 +82,8 @@
       <div class="textContainer">
       <section class="front-section has-background-black-ter" style="margin: 0%; padding-bottom: 0%; padding-right: 0%;">
 
-        <h1 class="onImageTitle" style="font-family: Futura; font-size: 130px; margin-right: 200px;"> HELLO I'M BLAEZ </h1>
-          <h2 class="onImageSubtitle" style="margin-right: 700px; margin-top: 300px; font-family: Futura;  font-size: 35px; left: 50px;">
+        <h1 class="onImageTitle" style="font-family: Futura; font-size: 10vw;"> HELLO I'M BLAEZ </h1>
+          <h2 class="onImageSubtitle" style="margin-right: 55vw; margin-top: 23vw; font-family: Futura;  font-size: 2.7vw; left: 4.5vw;">
             <strong>Solar Car Enthusiast Computer Science Nerd and Video Editing Guy </strong>
           </h2>
 
@@ -142,7 +123,7 @@
       style="border-bottom-right-radius: 5%;
       margin-top:0px">
 
-        <div class="box content" style="box-sizing: 10px; box-shadow: 100px;">
+        <div class="box content" style="box-sizing: 10px; box-shadow: 100px;" id="aboutme">
           <h1 class="title" align="left" style="margin-bottom: 0rem; font-size: 70px; letter-spacing: 1px;"> 
             <highlight>ABOUT ME&nbsp;</highlight>
           </h1>
@@ -162,8 +143,12 @@
           Curious to know more about what I've worked on?<strong> Let’s connect! </strong>
         </p>
         
-      </div>
+        </div>
       </section> 
+
+      
+
+
 
       <section class="section" style="margin-bottom: 50px;">
         <h1 class="Futura title is-1 has-text-centered" style="font-style: italic; font-size: 50px;"> 
@@ -178,7 +163,9 @@
             </h1>
 
             <div class="buttons is-centered" style="margin-top: 30px;">
-              <button class="button is-rounded is-large">Work Portfolio</button>
+              <button class="button is-rounded is-large">
+                <a href="work.html" style="color: white;">Work Portfolio</a>
+              </button>
             </div>
           </div>
 
@@ -188,7 +175,9 @@
             </h1>
 
             <div class="buttons is-centered" style="margin-top: 30px;">
-              <button class="button is-rounded is-large">Coding Experience</button>
+              <button class="button is-rounded is-large">
+                <a href="coding.html" style="color: white;">Coding Experience</a>
+              </button>
             </div>
 
           </div>
@@ -199,13 +188,12 @@
             </h1>
 
             <div class="buttons is-centered" style="margin-top: 55px;">
-              <button class="button is-rounded is-large">Learn About Me</button>
+              <button class="button is-rounded is-large">
+                <a href="about.html" style="color: white;">Learn About Me</a>
+              </button>
             </div>
-
           </div>
         </div>
-
-
       </section>
 
 
