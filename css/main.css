@@ -22468,6 +22468,10 @@ has-background-danger.is-hoverable:active {
   pointer-events: all !important;
 }
 
+.box, boxCorners {
+  background-color: hsl(0, 0%, 7%);
+}
+
 .background-image {
   background-image: url("images/bOutside.jpg");
   background-size: cover; /* image cover the entire background */
@@ -22580,8 +22584,8 @@ h1.futura {
   background: url(../images/rosePhoto2023.jpg);
   background-size: cover;
   box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
-  border-color: rgb(255, 193, 7);
-  background-color: rgba(0, 0, 0, 0.583);
+  border-color: rgb(255, 193, 7) !important;
+  background-color: rgba(0, 0, 0, 0.583) !important;
   background-blend-mode: multiply;
   border-width: 10px;
   align-items: center;
@@ -22589,10 +22593,37 @@ h1.futura {
 }
 
 .image-button:hover {
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-  background-color: rgba(0, 0, 0, 0.031);
+  box-shadow: 0 !important;
+  background-color: rgba(0, 0, 0, 0.031) !important;
   background-blend-mode: multiply;
   transform: scale(0.99);
+}
+
+.button, .buttonSquare, .image-button {
+  background-color: hsl(0, 0%, 7%);
+  border-color: hsl(0, 0%, 7%);
+  color: white;
+}
+
+button.button.is-border-white, button.is-border-white.buttonSquare, button.is-border-white.image-button {
+  border-color: rgb(66, 66, 66);
+  border-width: 0.5px;
+}
+
+button.button.is-border-white:hover, button.is-border-white.buttonSquare:hover, button.is-border-white.image-button:hover {
+  transform: scale(0.99);
+}
+
+* {
+  color: hsl(222, 14%, 71%);
+}
+
+.has-default-color {
+  color: hsl(222, 14%, 71%);
+}
+
+span {
+  color: white;
 }
 
 /*# sourceMappingURL=main.css.map */

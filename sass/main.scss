@@ -1,6 +1,10 @@
 // main.scss
 @import "../node_modules/bulma/bulma.scss";
 
+.box {
+  background-color: hsl(0, 0%, 7%);
+}
+
 .background-image {
     background-image: url('images/bOutside.jpg');
     background-size: cover; /* image cover the entire background */
@@ -118,6 +122,7 @@ boxCorners {
   @extend .futuraTitle;
   position: absolute;
 }
+
 .onImageSubtitle {
   @extend .subtitle;
   position: absolute;
@@ -141,8 +146,8 @@ boxCorners {
   background: url(../images/rosePhoto2023.jpg);
   background-size: cover;
   box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
-  border-color: rgb(255, 193, 7);
-  background-color: rgba(0, 0, 0, 0.583);
+  border-color: rgb(255, 193, 7) !important;
+  background-color: rgba(0, 0, 0, 0.583) !important;
   background-blend-mode: multiply;
   border-width: 10px;
 
@@ -152,8 +157,38 @@ boxCorners {
 }
 
 .image-button:hover{
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-  background-color: rgba(0, 0, 0, 0.031);
+  box-shadow: 0 !important;
+  background-color: rgba(0, 0, 0, 0.031) !important;
   background-blend-mode: multiply;
   transform: scale(0.99);
+}
+
+.button {
+  @extend .button;
+  background-color: hsl(0, 0%, 7%);
+  border-color: hsl(0, 0%, 7%);
+  color: white;
+  
+}
+
+button.button.is-border-white {
+  border-color: rgb(66, 66, 66);
+  border-width: 0.5px;
+}
+
+button.button.is-border-white:hover {
+  transform: scale(0.99);
+}
+
+
+* {
+  color: 	hsl(222, 14%, 71%)
+}
+
+.has-default-color {
+  color: 	hsl(222, 14%, 71%)
+}
+
+span {
+  color: white;
 }
