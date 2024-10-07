@@ -192,3 +192,10 @@ button.button.is-border-white:hover {
 span {
   color: white;
 }
+
+.column.items-centered {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+

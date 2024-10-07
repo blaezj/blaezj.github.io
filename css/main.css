@@ -22626,4 +22626,10 @@ span {
   color: white;
 }
 
+.column.items-centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /*# sourceMappingURL=main.css.map */
