@@ -1,3 +1,6 @@
 # blaezj.github.io
 
-my resume site
+please view my site here:
+https://blaezj.github.io/
+[Link](https://blaezj.github.io/
+)
