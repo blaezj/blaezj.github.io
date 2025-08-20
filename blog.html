@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>hullo</title>
+    <link rel="stylesheet" href="css/main.css"> 
+  </head>
+
+  <body class="has-background-black-ter">
+<!-- drop down bar and top section-->
+<!-- <section class="section has-background-warning small-section">  -->
+  
+  <nav class="navbar is-warning" role="navigation" aria-label="main navigation">  
+    <div class="navbar-brand">
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMain">
+        <span aria-hidden="true" style="background-color: black;"></span>
+        <span aria-hidden="true" style="background-color: black;"></span>
+        <span aria-hidden="true" style="background-color: black;"></span>
+        <span aria-hidden="true" style="background-color: black;"></span>
+      </a>
+    </div>
+  
+      <div class="navbar-menu" id="navbarMain">
+        <div class="navbar-start">
+          <a class="navbar-item" href="index.html">
+            <button class="button">
+              <span>Home</span>
+            </button>
+          </a>
+  
+          <a class="navbar-item" href="index.html#aboutme">
+            About Me
+          </a>
+          
+          <a class="navbar-item" href="index.html#resume">
+            Resume
+          </a>
+  
+          <a class="navbar-item" href="index.html#contact">
+            Contact
+          </a>
+  
+          <a class="navbar-item" href="index.html#portfolio">
+            Portfolio
+          </a>
+  
+  
+  
+  
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              Extras
+            </a>
+  
+            <div class="navbar-dropdown has-background-black-ter">
+              <a class="navbar-item has-background-black-ter" href="work.html">
+                Work Portfolio
+              </a>
+              <a class="navbar-item has-background-black-ter" href="coding.html">
+                Coding Expierence
+              </a>
+              <a class="navbar-item has-background-black-ter" href="about.html">
+                More About Me
+              </a>
+            </div>
+          </div>
+        </div>
+  
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="buttons has-addons">
+              <button class="button" onclick="window.open('https://github.com/blaezj', '_blank')">
+                <span class="icon">
+                  <img src="images/github.png">
+                </span>
+                <span>Github</span>
+              </button>
+              <button class="button" onclick="window.open('https://www.instagram.com/blaez.j/', '_blank')">
+                <span class="icon">
+                  <img src="images/instagram.png">
+                </span>
+                <span>Instagram</span>
+              </button>
+              <button class="button" onclick="window.open('https://www.linkedin.com/in/blaez-jibben-8b5957205/', '_blank')">
+                <span class="icon">
+                  <img src="images/linkedin.png">
+                </span>
+                <span>LinkedIn</span>
+              </button>
+            </div>
+          </div>
+        </div>
+    </div>
+  </nav>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const burger = document.querySelector('.navbar-burger');
+      const menu = document.querySelector('#navbarMain');
+  
+      burger.addEventListener('click', () => {
+        burger.classList.toggle('is-active');
+        menu.classList.toggle('is-active');
+      });
+    });
+  </script>
+  
+
+    
+    <!-- where the main body is -->
+    <section class="section is-small">
+
+        <h1 class="title has-text-centered has-text-white">
+            The Blog
+        </h1>
+        <h2 class="subtitle has-text-centered has-text-white">
+            (i would recommend not clicking off this page, unless you have the url memorized)
+        </h2>
+        <h3 class="subtitle is-7 has-text-centered has-text-white" style="margin-bottom: 25px;">
+            ((i am also working on this page so it may change throughout the semester as I get bored))
+        </h3>
+
+
+      <!-- driver display -->
+      <div class="box columns" style="margin-bottom: 40px;">
+        
+        <div class="box column">
+          <h1 class = 'title is-5 has-text-white'> Best Computing Experiences???? </h1>
+          <h2 class = 'subtitle has-text-white'> August 20th, 2025 </h2>
+
+          <p> 
+            <br>
+            HELLO! I am Blaez, greeting anyone who may have stumbled and/or purposefully clicked
+            on this here blog. This is a required post for my senior seminar course,
+            but who knows I might continue using this blog sometime after!!
+
+            <br><br>
+            Best experience in class?? I would have to say that would be the same
+            as my worst expierence in class!! I am talking about none other than Operating Systems.
+            What a lovely, interestingly indepth class, taught by Dr. Norris. The expierence I refer to
+            is the Shell lab, where we had to create our own shell on a linux machine. Its a bit more
+            barebones than the Systems 2 lab that some may have done, a lot less instructions on how to
+            complete it. Long story short, I probably worked on that lab a good 30 hours that week. It was 
+            grueling, I was so pressed for time I begged people to take my work shifts and had to ask
+            my linear alegebra teacher for an extension on a project. What a fun time.
+
+            It turned out being pretty swell though, as I was actually really proud of my shell. Everything 
+            was nicely documented, and I quite enjoyed how I eloquently handled multiple problems that presented
+            themselves.
+            
+            <br><br>
+
+            My best out-of-class computing expierence would either be tied with my first telemetry tests for sunergy,
+            or my recent hackathon at app. Long story short, the Telemetry was a project I worked on with my friend Ryan Densmore all last semester.
+            We worked with XBees to send data from our schools solar car (ROSE) to the pits, which is super important for data collection during
+            solar vehicle races. We hadn't told the team manager about our success, so the look on his face when observing the display at testing day
+            was pure bliss. Apphack was also a really fun expierence. My team create sun.fun, which was a collection of games. Ryan and I worked on a twitch chat generator,
+            except the messages were all generated from a llama model based on microphone input. During the presentation, we had twitch chat running, and it constantly
+            would be commenting on what myself, ryan, nathan, or hannah would say. It was a very fun time.
+
+          </p>
+        </div>
+      </div>
+
+    </div>
+    </section>
+
+    <!-- down section -->
+    <section class="section has-background-black-bis is-small">
+      <div class="buttons is-centered" style="margin-bottom: 20px;">
+
+        <a href="https://github.com/blaezj" target="_blank">
+          <button class="button">
+            <span class="icon">
+              <img src="images/github.png">
+              <!-- <i class="fas fa-github"></i> -->
+            </span>
+            <span>Github</span>
+          </button>
+        </a>
+      
+        <a href="https://www.instagram.com/blaez.j/" target="_blank">
+          <button class="button">
+            <span class="icon">
+              <img src="images/instagram.png">
+            </span>
+            <span>Instagram</span>
+          </button>
+        </a>
+        
+        <a href="https://www.linkedin.com/in/blaez-jibben-8b5957205/" target="_blank">
+          <button class="button">
+            <span class="icon">
+              <img src="images/linkedin.png">
+            </span>
+            <span>LinkedIn</span>
+          </button>
+        </a>
+
+      </div>
+
+      <!-- license for bulma (required) -->
+      <div class="bd-footer-tsp has-text-centered">
+        Source code licensed <a href="https://opensource.org/licenses/mit-license.php" target="_blank">MIT</a>.
+        Website content licensed <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a>
+      </div>
+
+    </section>
+
+  </body>
+</html>
