@@ -1,0 +1,106 @@
+
+p {
+    min-height: 10vh;
+}
+
+
+.infotainment {
+    display: flex;
+    flex: 1 1 auto;
+
+    height: 1000px;
+    width: 100%;
+}
+
+.infoitem {
+    border: 2px solid rgb(96 139 168);
+    background-color: rgba(28, 41, 49, 0.2);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+
+.infoitem h1 {
+    margin-bottom: 0rem;
+    /* font-family: "Futura"; */
+    font-size: 8vw;
+    letter-spacing: 1px;
+    color: white;
+
+}
+
+.superEvil {
+    color: red;
+}
+
+.priority {
+    flex: 1 1 auto;
+}
+
+/* below is for the video  */
+section.vid {
+    /* 100% as this is mapped to the size of the infotainment */
+    height: 100%; 
+    width: 100%;
+    position: relative;
+
+}
+
+section.vid div.holder {
+    position: sticky;
+    top: 0;
+}
+
+section.vid div.text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* font-family: Futura; 
+    font-size: 10vw;
+    color: white; */
+}
+
+section.vid div.text div.subtext {
+    font-family: Futura; 
+    font-size: 5vw;
+    color: white;
+}
+
+.right {
+    text-align: right;
+}
+
+.center {
+    text-align: center;
+}
+/* section.vid div.text div {
+    height: 100vh;
+} */
+
+section.vid video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+img {
+    width: 50%;
+    height: 100.1vh;
+    display: block;
+}
+
+.hidden {
+    filter: blur(8px);
+    opacity: 0;
+    transition: all 2000ms;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+
+}
+
+
