@@ -24,12 +24,12 @@
       <div class="navbar-menu" id="navbarMain">
         <div class="navbar-start">
           <a class="navbar-item" href="index.html">
-            <button class="button">
+            <button class="superButton">
               <span>Home</span>
             </button>
           </a>
   
-          <a class="navbar-item" href="index.html#aboutme">
+          <a class="navbar-item " href="index.html#aboutme">
             About Me
           </a>
           
@@ -70,19 +70,19 @@
         <div class="navbar-end">
           <div class="navbar-item">
             <div class="buttons has-addons">
-              <button class="button" onclick="window.open('https://github.com/blaezj', '_blank')">
+              <button class="superButton" onclick="window.open('https://github.com/blaezj', '_blank')">
                 <span class="icon">
                   <img src="images/github.png">
                 </span>
                 <span>Github</span>
               </button>
-              <button class="button" onclick="window.open('https://www.instagram.com/blaez.j/', '_blank')">
+              <button class="superButton" onclick="window.open('https://www.instagram.com/blaez.j/', '_blank')">
                 <span class="icon">
                   <img src="images/instagram.png">
                 </span>
                 <span>Instagram</span>
               </button>
-              <button class="button" onclick="window.open('https://www.linkedin.com/in/blaez-jibben-8b5957205/', '_blank')">
+              <button class="superButton" onclick="window.open('https://www.linkedin.com/in/blaez-jibben-8b5957205/', '_blank')">
                 <span class="icon">
                   <img src="images/linkedin.png">
                 </span>
@@ -126,11 +126,11 @@
 
         </div>
         
-        <div class="box column">
-          <h1 class = 'title has-text-white'> Driver Display </h1>
-          <h2 class = 'subtitle has-text-white'> MAY 2024 - JULY 2024 </h2>
+        <div class="box column variableText">
+          <h1 class = 'title has-text-white variableText'> Driver Display </h1>
+          <h2 class = 'subtitle has-text-white variableText'> MAY 2024 - PRESENT </h2>
 
-          <p> 
+          <p class = "variableText"> 
             Over 4 months, I successfully developed a Driver Display that interfaces with the CANBUS of ROSE. 
             The system decodes CANBUS data using a Raspberry Pi 3B+ connected via a PiCAN2 hat.
             The data is then organized through a Python dictionary, added to a data queue, and subsequently 
@@ -141,6 +141,8 @@
             reinforcing my proficiency in Python, planning a development timeline, 
             interfacing with CANBUS, and overall technical experience with EVS
           </p>
+
+
         </div>
       </div>
 
@@ -159,7 +161,7 @@
           <h1 class = 'title has-text-white'> Telemetry with Xbee </h1>
           <h2 class = 'subtitle has-text-white'> SEPTEMBER 2024 - PRESENT </h2>
 
-          <p> 
+          <p class="variableText"> 
             Working with XBee Modules to reach the end goal of long distance communication from ROSE
             to pits, for more effiecent data transfer and communication between team members in the pits,
             and drivers.
@@ -178,7 +180,7 @@
           <h1 class = 'title has-text-white'> ARDUINO Pulse Counter </h1>
           <h2 class = 'subtitle has-text-white'> June 2024 - JULY 2024 </h2>
 
-          <p> 
+          <p class="variableText"> 
             Due to our motors having an error with sending RPM via CAN, we had to improvise.
             I aided into the development of a Arduino Pulse counter, which would count
             the pulses from the MITSUBA 2096Ds in order to calculate RPM, and later speed. The second interation of the device 
@@ -210,7 +212,7 @@
           <h1 class = 'title has-text-white'> TABLET Style Changes </h1>
           <h2 class = 'subtitle has-text-white'> May 2023 - June 2023 </h2>
 
-          <p> 
+          <p class="variableText"> 
             My first year on the team in 2023 included learning valuable programming, electrical, and teamwork skills.
             One of my first projects on the team was a customization style for our tablet based display system at the time,
             which was built in Dart. Myself, along with another member John Waugh, created a light mode for the previous 
@@ -239,7 +241,7 @@
           <div class="box column">
             <h1 class = 'title has-text-white'> Appalachian Society for Computing, Informatics, and Innovation </h1>
             <h2 class = 'subtitle has-text-white'> April 2024 - PRESENT </h2>
-            <p> 
+            <p class="variableText"> 
               Revitalized the Appalachian Society for Computing, Informatics, and Innovation,
               the premier Computer Science Club at Appalachian State University.
               Currently spearheading a team of officers to cultivate a vibrant community of Computer Science students,

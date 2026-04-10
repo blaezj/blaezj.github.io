@@ -68,7 +68,9 @@
   src: url('../fonts/futura/futur.ttf');
 }
 
-
+.scalePicture {
+  width: 100vh
+}
 
 .futuraTitle {
   @extend .title;
@@ -91,6 +93,22 @@ li.black:before {
 
 p.futura{
   font-family: 'Futura', Arial, Helvetica, sans-serif !important;
+}
+
+.variableText {
+  font-size: 8px;
+  font-size: 1.5vw;
+}
+
+.navbar-item {
+  font-size: 1.75vw;
+  font-size: 2vh;
+}
+
+.superButton {
+  @extend .button;
+  font-size: 1.5vw;
+  font-size: 2vh;
 }
 
 h1.futura{

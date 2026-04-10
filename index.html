@@ -6,110 +6,144 @@
     <title>hullo</title>
     <link rel="stylesheet" href="css/main.css"> 
   </head>
+  
   <body class="has-background-black-ter">
+
 
 <!-- drop down bar and top section-->
 <!-- <section class="section has-background-warning small-section">  -->
+  <nav class="navbar is-warning" role="navigation" aria-label="main navigation">  
+    <div class="navbar-brand">
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMain">
+        <span aria-hidden="true" style="background-color: black;"></span>
+        <span aria-hidden="true" style="background-color: black;"></span>
+        <span aria-hidden="true" style="background-color: black;"></span>
+        <span aria-hidden="true" style="background-color: black;"></span>
+      </a>
+    </div>
   
-<nav class="navbar is-warning" role="navigation" aria-label="main navigation">  
-  <div class="navbar-brand">
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMain">
-      <span aria-hidden="true" style="background-color: black;"></span>
-      <span aria-hidden="true" style="background-color: black;"></span>
-      <span aria-hidden="true" style="background-color: black;"></span>
-      <span aria-hidden="true" style="background-color: black;"></span>
-    </a>
-  </div>
-
-    <div class="navbar-menu" id="navbarMain">
-      <div class="navbar-start">
-        <a class="navbar-item" href="index.html">
-          <button class="button">
-            <span>Home</span>
-          </button>
-        </a>
-
-        <a class="navbar-item" href="#aboutme">
-          About Me
-        </a>
-        
-        <a class="navbar-item" href="#resume">
-          Resume
-        </a>
-
-        <a class="navbar-item" href="#contact">
-          Contact
-        </a>
-
-        <a class="navbar-item" href="#portfolio">
-          Portfolio
-        </a>
-
-
-
-
-        <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link">
-            Extras
+      <div class="navbar-menu" id="navbarMain">
+        <div class="navbar-start">
+          <a class="navbar-item" href="index.html">
+            <button class="superButton">
+              <span>Home</span>
+            </button>
           </a>
-
-          <div class="navbar-dropdown has-background-black-ter">
-            <a class="navbar-item has-background-black-ter" href="work.html">
-              Work Portfolio
+  
+          <a class="navbar-item " href="index.html#aboutme">
+            About Me
+          </a>
+          
+          <a class="navbar-item" href="index.html#resume">
+            Resume
+          </a>
+  
+          <a class="navbar-item" href="index.html#contact">
+            Contact
+          </a>
+  
+          <a class="navbar-item" href="index.html#portfolio">
+            Portfolio
+          </a>
+  
+  
+  
+  
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              Extras
             </a>
-            <a class="navbar-item has-background-black-ter" href="coding.html">
-              Coding Expierence
-            </a>
-            <a class="navbar-item has-background-black-ter" href="about.html">
-              More About Me
-            </a>
+  
+            <div class="navbar-dropdown has-background-black-ter">
+              <a class="navbar-item has-background-black-ter" href="work.html">
+                Work Portfolio
+              </a>
+              <a class="navbar-item has-background-black-ter" href="coding.html">
+                Coding Expierence
+              </a>
+              <a class="navbar-item has-background-black-ter" href="about.html">
+                More About Me
+              </a>
+            </div>
           </div>
         </div>
-      </div>
-
-      <div class="navbar-end">
-        <div class="navbar-item">
-          <div class="buttons has-addons">
-            <button class="button has-background-black-bis" onclick="window.open('https://github.com/blaezj', '_blank')">
-              <span class="icon">
-                <img src="images/github.png">
-              </span>
-              <span>Github</span>
-            </button>
-            <button class="button has-background-black-bis" onclick="window.open('https://www.instagram.com/blaez.j/', '_blank')">
-              <span class="icon">
-                <img src="images/instagram.png">
-              </span>
-              <span>Instagram</span>
-            </button>
-            <button class="button has-background-black-bis" onclick="window.open('https://www.linkedin.com/in/blaez-jibben-8b5957205/', '_blank')">
-              <span class="icon">
-                <img src="images/linkedin.png">
-              </span>
-              <span>LinkedIn</span>
-            </button>
+  
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="buttons has-addons">
+              <button class="superButton" onclick="window.open('https://github.com/blaezj', '_blank')">
+                <span class="icon">
+                  <img src="images/github.png">
+                </span>
+                <span>Github</span>
+              </button>
+              <button class="superButton" onclick="window.open('https://www.instagram.com/blaez.j/', '_blank')">
+                <span class="icon">
+                  <img src="images/instagram.png">
+                </span>
+                <span>Instagram</span>
+              </button>
+              <button class="superButton" onclick="window.open('https://www.linkedin.com/in/blaez-jibben-8b5957205/', '_blank')">
+                <span class="icon">
+                  <img src="images/linkedin.png">
+                </span>
+                <span>LinkedIn</span>
+              </button>
+            </div>
           </div>
         </div>
-      </div>
+    </div>
+  </nav>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const burger = document.querySelector('.navbar-burger');
+      const menu = document.querySelector('#navbarMain');
+  
+      burger.addEventListener('click', () => {
+        burger.classList.toggle('is-active');
+        menu.classList.toggle('is-active');
+      });
+    });
+  </script>
 
+<br>
+<br>
 
+<div class="columns is-gapless no-gap "> 
+  <div class="column"> 
+    <img class="scalePicture is-centered" src="images/cautionTape.webp">
+  </div>
+  <div class="column"> 
+    <img class="scalePicture is-centered" src="images/cautionTape.webp">
+  </div>
+</div>
+
+  <h1 class="title is-3" style="color: white; font-size: 2vw;"> WARNING!!! </h1> 
+
+  <p class="Futura" style="color: white; font-size: 2vw;">
+    this site is under heavy maintanence and has largely outdated content!!
+    I am working on a site rehaul so this site may entail my latest projects or work.
+  </p>
+  <br>
+
+  <p class="Futura" style="color: white; font-size: 2vw;">
+    If you are interested in getting the most up to date info on my work, you can download my resume 
+    here:
+  </p>
+
+  <br>
+
+  <div class="columns is-gapless no-gap "> 
+    <div class="column"> 
+      <img class="scalePicture is-centered" src="images/cautionTape.webp">
+    </div>
+    <div class="column"> 
+      <img class="scalePicture is-centered" src="images/cautionTape.webp">
+    </div>
   </div>
 
-</nav>
-
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const burger = document.querySelector('.navbar-burger');
-    const menu = document.querySelector('#navbarMain');
-
-    burger.addEventListener('click', () => {
-      burger.classList.toggle('is-active');
-      menu.classList.toggle('is-active');
-    });
-  });
-</script>
-
-
+  
   <!-- start of columned page -->
   <div class="columns is-gapless no-gap "> 
   
@@ -194,7 +228,7 @@
 
 
 
-        <h1 class="title is-size-3 has-text-white">RESUME</h1>
+        <h1 class="variableTexttitle is-size-3 has-text-white">RESUME</h1>
         <div class="columns">
           <div class="column is-three-fifths">
             <div class="summary">
